@@ -1,0 +1,94 @@
+aside {
+    width: 10rem;
+    background-color: var(--color-purple-light);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: flex-start;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0 .4rem .4rem rgba(0, 0, 0, 0.25);
+    transition: all .7s;
+    grid-area: aside
+}
+
+aside .logo {
+    align-self: center;
+    padding: 5.4rem 1.8rem 2.6rem;
+}
+
+aside .hr {
+    height: 2px;
+    background-color: var(--color-grey-dark);
+    align-self: center;
+    width: 62%;
+    margin-bottom: 32px;
+}
+
+aside:hover {
+    width: 20.6rem;
+}
+
+aside:hover * {
+    opacity: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-purple-light);
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.active {
+    width: calc(100% - 1.3rem);
+    background-color: var(--color-white);
+    height: 5.8rem;
+    border-radius: 2.5rem 0 0 2.5rem;
+    margin-bottom: 1.8rem;
+    margin-left: 1.3rem;
+}
+
+.row {
+    min-width: 5rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn {
+    padding-left: 2rem;
+    color: var(--color-grey-dark);
+    opacity: 0;
+}
+
+.active .btn {
+    color: var(--color-blue-dark);
+}
+
+footer {
+    position: fixed;
+    padding: 2rem 2rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer .hr {
+    margin: 0 auto;
+    width: 35rem;
+    height: 1px;
+    background-color: var(--color-blue-dark);
+}
+
+footer .copyright {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: var(--footer-text-size);
+    color: var(--color-blue-dark);
+    text-transform: capitalize;
+}
